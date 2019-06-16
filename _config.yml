@@ -1,26 +1,9 @@
 theme: jekyll-theme-minimal
-name: "Eron Raines"
-output_dir: "."
+name: "my-website"
 navbar:
-  title: "Eron Raines"
+  title: "My Website"
   left:
-    - text: "Writing"
-      href: 
-    - text: "Speaking"
-      href: 
-    - text: "Programming"
-      href: 
-    - text: "Teaching"
-      href: 
-  right:
-    - icon: fa-envelope fa-lg
-      href: 
-    - icon: fa-github fa-lg
-      href: 
-    - icon: fa-twitter fa-lg
-      href: 
-
-output:
-  html_document:
-    theme: paper
-    css: 'styles.css'
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
