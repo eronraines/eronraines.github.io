@@ -1,0 +1,18 @@
+---
+
+---
+
+
+
+---
+---
+
+<link rel="stylesheet" href="styles.css" type="text/css">
+
+<img src="pictures/eron raines (6).jpg" style="width:25%; border:10px solid; margin-right: 20px" align="left">
+
+I like to analyze data to answer research questions and test hypotheses. Currently I am a PhD candidate at  [Victoria University of Wellington](https://www.victoria.ac.nz/sgees/research/phd-profiles/eron-raines) in the School of Geography, Earth and Environmental Sciences. 
+
+
+
+My full CV is available [here](Yale Package/CV_Raines.pdf).
