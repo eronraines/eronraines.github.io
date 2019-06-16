@@ -1,3 +1,9 @@
 theme: jekyll-theme-minimal
-title: The self-organization of sinkholes discredits a long-held ecologic theory.
-introduction: Data and R-code
+title: "The self-organization of sinkholes discredits a long-held ecologic theory."
+navbar:
+  title: "My Website"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
