@@ -1,9 +1,26 @@
 theme: jekyll-theme-minimal
-title: "The self-organization of sinkholes discredits a long-held ecologic theory."
+name: "Emily C. Zabor"
+output_dir: "."
 navbar:
-  title: "My Website"
+  title: "Emily C. Zabor"
   left:
-    - text: "Home"
-      href: index.html
-    - text: "About"
-      href: about.html
+    - text: "Writing"
+      href: research.html
+    - text: "Speaking"
+      href: talks.html
+    - text: "Programming"
+      href: software.html
+    - text: "Teaching"
+      href: teaching.html
+  right:
+    - icon: fa-envelope fa-lg
+      href: contact.html
+    - icon: fa-github fa-lg
+      href: http://github.com/zabore
+    - icon: fa-twitter fa-lg
+      href: https://twitter.com/zabormetrics
+
+output:
+  html_document:
+    theme: paper
+    css: 'styles.css'
