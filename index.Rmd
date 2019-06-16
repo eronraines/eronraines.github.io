@@ -1,5 +1,0 @@
----
-title: "Eron Raines"
----
-
-Hello, Website! Welcome to the world.
