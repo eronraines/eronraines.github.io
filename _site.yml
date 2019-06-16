@@ -1,0 +1,13 @@
+name: "Eron Raines"
+output_dir: "."
+navbar:
+  title: "Eron Raines"
+  left:
+    - text: "Page 1"
+      href: html1.html
+    - text: "Page2"
+      href: html2.html
+output:
+  html_document:
+    theme: paper
+    css: 'styles.css'
