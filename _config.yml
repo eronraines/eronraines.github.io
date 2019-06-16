@@ -1,8 +1,8 @@
 theme: jekyll-theme-minimal
-name: "Emily C. Zabor"
+name: "Eron Raines"
 output_dir: "."
 navbar:
-  title: "Emily C. Zabor"
+  title: "Eron Raines"
   left:
     - text: "Writing"
       href: research.html
