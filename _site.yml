@@ -15,7 +15,7 @@ navbar:
     - icon: fa-github fa-lg
       href: http://github.com/eronraines
     - icon: fa-linkedin fa-lg
-      href: https://www.linkedin.com/in/eronraines/?originalSubdomain=nz
+      href: https://www.linkedin.com/in/eronraines/
 output:
   html_document:
     theme: paper
