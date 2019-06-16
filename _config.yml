@@ -1,5 +1,6 @@
 theme: jekyll-theme-minimal
-name: "my-website"
+name: "Eron Raines"
+output_dir: "."
 navbar:
   title: "My Website"
   left:
