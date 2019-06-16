@@ -5,20 +5,20 @@ navbar:
   title: "Eron Raines"
   left:
     - text: "Writing"
-      href: research.html
+      href: 
     - text: "Speaking"
-      href: talks.html
+      href: 
     - text: "Programming"
-      href: software.html
+      href: 
     - text: "Teaching"
-      href: teaching.html
+      href: 
   right:
     - icon: fa-envelope fa-lg
-      href: contact.html
+      href: 
     - icon: fa-github fa-lg
-      href: http://github.com/zabore
+      href: 
     - icon: fa-twitter fa-lg
-      href: https://twitter.com/zabormetrics
+      href: 
 
 output:
   html_document:
