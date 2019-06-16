@@ -3,10 +3,19 @@ name: "Eron Raines"
 navbar:
   title: "Eron Raines"
   left:
-    - text: "Page 1"
-      href: html1.html
-    - text: "Page2"
-      href: html2.html
+    - text: "Data"
+      href: data.html
+    - text: "Writing"
+      href: writing.html
+    - text: "Computer programs"
+      href: computeprograms.html
+   right:
+    - icon: fa-envelope fa-lg
+      href: contact.html
+    - icon: fa-github fa-lg
+      href: http://github.com/eronraines
+    - icon: fa-linkedin fa-lg
+      href: https://www.linkedin.com/in/eronraines/?originalSubdomain=nz
 output:
   html_document:
     theme: paper
