@@ -1,14 +1,17 @@
+
 ---
-title: "www.eronraines.com"
 ---
 
 
 <link rel="stylesheet" href="styles.css" type="text/css">
-
 <img src="images/eron raines.jpg" style="width:25%; border:10px solid; margin-right: 20px" align="left">
 
-I like to analyze data to answer research questions and test hypotheses. Currently I am a PhD candidate at  [Victoria University of Wellington](https://www.victoria.ac.nz/sgees/research/phd-profiles/eron-raines) in the School of Geography, Earth and Environmental Sciences. 
+
+I am an [ASA accredited statistician](https://www.amstat.org/ASA/Your-Career/Accredited-Members.aspx) currently earning two PhDs. One in geology under [Kevin Norton](https://scholar.google.com/citations?user=HOCYhlIAAAAJ&hl=en&oi=ao) in the School of Geography, Earth and Environmental Sciences at [Victoria University of Wellington, New Zealand](https://www.victoria.ac.nz/sgees/research/phd-profiles/eron-raines) and the second in isotope geochemistry under [Tony Dosseto](https://scholar.google.com/citations?user=DeHWEEIAAAAJ&hl=en&oi=ao) in the School of Earth and Environmental Sciences at the [University of Wollongong, Australia](https://www.uow.edu.au/science-medicine-health/research/wollongong-isotope-geochronology-laboratory-wigl/people/). For my dissertation work, I am studying chemical weathering rates in the Southern Alps of New Zealand where physical erosion rates are so high that current theory predicts chemical weathering should not occur-however, it does. One potential explanation is that biota somehow manages to increase chemical weathering rates. Chemical weathering of silicates ultimately modulates global climate. If biota can affect the dramatic increases in chemical weathering rates we are seeing in New Zealand then there is the potential that biology drives global climate through the geologic sequestration of CO2. My PhD research has put me in some really cool remote settings and on rare occasions even in helicopters. However, I still spend an inordinate amount of time in the lab as well as in front of a computer. Here you will find links to some of the data I have helped collect, some writings, and computer programs I am still working the kinks out of. 
+output:
+  html_document:
+    theme: paper
+    css: 'styles.css'
 
 
 
-My full CV is available [here](files/Raines_CV.pdf).
