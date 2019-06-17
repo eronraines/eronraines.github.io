@@ -7,7 +7,7 @@ navbar:
     - text: "Writing"
       href: writing.html
     - text: "Computer programs"
-      href: computeprograms.html
+      href: computerprograms.html
     - icon: fa-envelope fa-lg
       href: contact.html
     - icon: fa-github fa-lg
