@@ -401,6 +401,7 @@
     .rows li,.contact-list li,dl.meta div{grid-template-columns:1fr;gap:2px}
     .where{display:none}
   }
+  video::-webkit-media-controls,video::-webkit-media-controls-start-playback-button,video::-webkit-media-controls-overlay-play-button,video::-webkit-media-controls-panel{display:none!important;-webkit-appearance:none;opacity:0}
 </style>
 </head>
 <body>
@@ -1054,6 +1055,34 @@
     v.addEventListener('pause',function(){ v.dataset.want='0'; });
     v.addEventListener('playing',function(){ v.dataset.want='1'; });
   });
+})();
+</script>
+<script>
+/* Safari: keep videos muted and inline, retry playback when ready and on the first user interaction */
+(function(){
+  var calm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches; if(calm) return;
+  function prep(v){ v.muted=true; v.defaultMuted=true; v.setAttribute('muted',''); v.setAttribute('playsinline',''); v.setAttribute('webkit-playsinline',''); v.controls=false; }
+  function tryPlay(v){ prep(v); var p=v.play(); if(p&&p.catch) p.catch(function(){}); }
+  var hero=document.querySelector('video.bg');
+  document.querySelectorAll('video').forEach(prep);
+  if(hero){ ['loadedmetadata','canplay'].forEach(function(e){ hero.addEventListener(e,function(){ if(hero.paused&&hero.closest('.page.show')) tryPlay(hero); }); }); }
+  function kick(){ if(hero&&hero.paused&&hero.closest('.page.show')) tryPlay(hero);
+    document.querySelectorAll('video.anim').forEach(function(v){ var r=v.getBoundingClientRect(); if(v.paused&&r.bottom>0&&r.top<innerHeight) tryPlay(v); }); }
+  ['pointerdown','touchstart','keydown','scroll','wheel'].forEach(function(e){ window.addEventListener(e,kick,{passive:true}); });
+  document.addEventListener('visibilitychange',function(){ if(!document.hidden) kick(); });
+})();
+</script>
+<script>
+/* Safari plays an MP4 inside <img> like a GIF: it starts on open even where Safari blocks video auto-play (Low Power Mode, auto-play off). */
+(function(){
+  var ua=navigator.userAgent, isSafari=/Safari\//.test(ua)&&!/Chrome|Chromium|CriOS|FxiOS|Edg|OPR|Firefox/.test(ua);
+  if(!isSafari) return;
+  var v=document.querySelector('video.bg'); if(!v) return;
+  var src=(v.querySelector('source')||v).getAttribute('src');
+  var im=new Image(); im.className='bg'; im.alt=''; im.setAttribute('aria-hidden','true');
+  im.style.cssText='position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover;object-position:'+(v.style.objectPosition||'50% 50%')+';animation:none;transform:none';
+  im.onload=function(){ v.pause(); v.style.visibility='hidden'; };
+  im.src=src; v.parentNode.insertBefore(im,v.nextSibling);
 })();
 </script>
 </body>
