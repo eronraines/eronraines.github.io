@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Eron Raines · Earth scientist and educator</title>
+<link rel="preload" as="image" href="img/home_poster.jpg" fetchpriority="high">
 <meta name="description" content="Eron Raines, Earth scientist and educator, is a Visiting Assistant Professor of Earth Sciences at the University of Memphis. Research in soil formation, chemical weathering, low-temperature and isotope geochemistry, geomorphology, and land surface processes, with field work in New Zealand, Florida, and Réunion Island.">
 <meta name="author" content="Eron Raines">
 <meta property="og:type" content="profile">
@@ -1049,12 +1050,10 @@
     v.addEventListener('error',function(){ blobify(v); });
     var op=v.play.bind(v);
     v.play=function(){ v.dataset.want='1'; var p=op();
-      setTimeout(function(){ if(v.dataset.want==='1' && v.readyState<3 && !v.dataset.blob) blobify(v); },4000);
       return p; };
     v.addEventListener('pause',function(){ v.dataset.want='0'; });
     v.addEventListener('playing',function(){ v.dataset.want='1'; });
   });
-  var h=document.querySelector('video.bg[autoplay]'); if(h){ setTimeout(function(){ if(h.readyState<3 && !h.dataset.blob) blobify(h); },4000); }
 })();
 </script>
 </body>
